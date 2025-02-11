@@ -1,6 +1,6 @@
 const { v4: uuid4 } = require("uuid");
 
-class Cafeteria {
+class Item {
     constructor(name, price, type){
         this.id = uuid4();
         this.nome = name;
@@ -9,4 +9,4 @@ class Cafeteria {
     }
 }
 
-module.exports = Cafeteria;
+module.exports = Item;
