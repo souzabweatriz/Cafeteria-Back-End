@@ -1,0 +1,29 @@
+{
+  "name": "cafeteria-back-end",
+  "version": "1.0.0",
+  "description": "Atividade de Back-End sobre uma cafeteria ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "SENAI",
+    "BACK-END",
+    "CAFETERIA",
+    "CRUD",
+    "DEV",
+    "APIREST"
+  ],
+  "author": "Ana Beatriz de Souza de Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
