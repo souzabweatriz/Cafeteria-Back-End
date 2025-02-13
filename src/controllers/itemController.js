@@ -1,5 +1,3 @@
-const { request } = require("express");
-
 const Item = require("../models/Item");
 const ItemList = require("../models/ItemList");
 

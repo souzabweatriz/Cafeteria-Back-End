@@ -1,4 +1,4 @@
-const Order = require("../models.order");
+const Order = require("../models/Order");
 const OrderList = require("../models/OrderList");
 
 const list = new OrderList();
@@ -13,7 +13,7 @@ const router = {
     addOrder: (req, res) => {
         try {
             const {name, item, status} = req.body;
-            if (!name || item || status){
+            if (!name || !item || !status){
             throw new Error("Preencha todos os campos");
         }
         const order = new Order (name, item, status);
@@ -41,4 +41,4 @@ const router = {
     }
 };
 
-module.exports = OrderList;
+module.exports = router;
