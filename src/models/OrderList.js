@@ -5,6 +5,9 @@ class OrderList {
     addOrder(order){
         this.orders.push(order);
     }
+    getAllOrders(){
+        return this.orders;
+    }
     getOrderById(){
         const order = this.orders.find(order => order.id == id);
         if (!order){

@@ -23,6 +23,14 @@ const router = {
             res.status(400).json({message: "Erro ao adicionar pedido", error});
         }
     },
+    getAllOrders: (req, res) =>{
+        try {
+            const orders = list.getAllOrders();
+            res.status(200).json(orders)
+        } catch (error) {
+            res.status(404).json({message: 'Erro ao encontrar pedido', error})
+        }
+    },
     getOrderbyId: (req, res) => {
         try {
             const id = req.params.id
@@ -34,7 +42,7 @@ const router = {
     deleteOrder: (req, res) => {
         try {
             list.deleteOrder(req.params.id);
-            res.status(200).json({message: "Pedido deletado com sucesso"});
+            res.status(200).json({message: "Pedido cancelado com sucesso"});
         } catch (error) {
            res.status(403).json({message: "Não foi possível cancelar o pedido"});
         }
