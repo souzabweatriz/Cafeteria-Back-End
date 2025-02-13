@@ -35,7 +35,7 @@ const router = {
             const itens = list.getMenu();
             res.status(200).json(itens);
         } catch (error) {
-            res.status(404).json({message: 'Erro ao buscar menu', error})
+            res.status(404).json({message: 'Erro ao buscar menu', error});
         }
     }
 }
