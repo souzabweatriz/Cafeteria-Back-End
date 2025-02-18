@@ -17,10 +17,6 @@ Este projeto foi desenvolvido como parte do curso técnico em Desenvolvimento de
 
 ## 🛠 Tecnologias
 
-🌐 HTML: Estrutura
-
-🎨 CSS: Estilização
-
 ⚡ JavaScript: Funcionalidade
 
 ## 📃 Documentação
