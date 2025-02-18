@@ -27,6 +27,8 @@ list.addItem = new Item("Frozen Lemonade", "R$20,00", "Bebida");
 list.addItem = new Item("Frappuccino", "R$17,00", "Bebida");
 list.addItem = new Item("Chocolate quente", "R$14,00", "Bebida");
 
+console.log(list.menu);
+
 const router = {
     getMenu: (req, res) => {
         try {

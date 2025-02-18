@@ -8,7 +8,7 @@ class OrderList {
     getAllOrders(){
         return this.orders;
     }
-    getOrderById(){
+    getOrderById(id){
         const order = this.orders.find(order => order.id == id);
         if (!order){
             throw new Error("Pedido não encontrado");
